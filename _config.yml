@@ -1,7 +1,7 @@
 title: 王爵的技术博客
 url: https://blog.biezhi.me
-baseurl: /blog
-cdnurl: /blog
+baseurl: ''
+cdnurl: ''
 description: >
   偶尔写点东西。
 
