@@ -52,6 +52,8 @@ links:
     url: https://bakumon.me/blog
   - title: sunzhenyu
     url: https://sunzhenyu.net/
+  - title: 代码和段子手
+    url: http://codefun007.xyz/
 
 # html 压缩
 compress_html:
