@@ -5,7 +5,7 @@ cdnurl: ''
 description: >
   偶尔写点东西。
 
-permalink: /posts/:year/:month/:title.html
+permalink: /:year/:month/:title.html
 
 color: '#dc322f'
 analytics: 
