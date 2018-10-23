@@ -54,6 +54,8 @@ links:
     url: https://sunzhenyu.net/
   - title: 代码和段子手
     url: http://codefun007.xyz/
+  - title: hweining's garden
+    url: https://hweining.online/
 
 # html 压缩
 compress_html:
