@@ -1,0 +1,519 @@
+/*
+ *                        ___
+ *                       /\_ \
+ *  _____     ___     ___\//\ \      __
+ * /\ '__`\  / __`\  / __`\\ \ \   /'__`\
+ * \ \ \_\ \/\ \_\ \/\ \_\ \\_\ \_/\  __/
+ *  \ \ ,__/\ \____/\ \____//\____\ \____\
+ *   \ \ \/  \/___/  \/___/ \/____/\/____/
+ *    \ \_\
+ *     \/_/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/poole.
+ *
+ * Hijacked and adoped by @qwtel. Learn more at
+ * http://hydejack.github.io
+ */
+
+/*
+ * Body resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Nato Sans", "Open Sans", 'Microsoft Yahei', sans-serif;
+  background-color: #ffffff;
+  color: #161c1f;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+
+  /* Prevent side-scrolling on mobile */
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.night {
+  background-color: #061f2f;
+  color: #d3d4d4;
+}
+body.night h1,
+body.night h2,
+body.night h3,
+body.night h4,
+body.night h5,
+body.night h6 {
+  color: #ffffff;
+}
+body.night .message {
+  background-color: #000000;
+}
+body.night hr,
+body.night .aside-title {
+  border-bottom: 1px solid #4f6071
+}
+body.night pre,
+body.night code {
+  background-color: #0a121b;
+  color: #c1f1f0;
+}
+body.night .highlight .nt {
+  color: #e8a0e8
+}
+body.night .highlight .k {
+  color: #da5ada
+}
+body.night ul.related-posts a,
+body.night ul.related-posts .timestamp {
+  background-color: #061f2f;
+}
+
+/* No `:visited` state is required by default (browsers will use `a`) */
+a {
+  text-decoration: none;
+}
+a strong {
+  color: inherit;
+}
+/* `:focus` is linked to `:hover` for basic accessibility */
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Body text */
+p {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: .5rem;
+}
+
+/* Misc */
+hr.post-divide {
+  position: relative;
+  margin: 0.5rem 0 1.5rem 0;
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+abbr {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dashed inherit;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 1px solid inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+/* Keyboard */
+kbd {
+  display: inline-block;
+  min-width: 2.2em;
+  padding: .15em .8em .15em .5em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ece8e4 #dedad6 #c9c4c4;
+  border-radius: 4px;
+  background-color: #f5f3f1;
+  color: #222222;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-family: "Source Code Pro", "Andale Mono", Consolas, "Microsoft Yahei", monospace;
+  font-size: .8rem;
+}
+
+/* Code */
+code,
+pre {
+  font-family: "Source Code Pro", "Andale Mono", Consolas, "Microsoft Yahei", monospace;
+}
+code {
+  padding: .18em 0.28em;
+  /* Could be mistaken for a link if the user choses a similar link-color, so better no colored inline code. */
+  border-radius: 0px;
+  font-size: 1rem;
+  background-color: #fdf6e3;
+  color: #000000;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  line-height: 1.2;
+  background-color: #fdf6e3;
+  /* Prevent code linebreaks and allow side-scrolling (much better readability on mobile) */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+pre code {
+  padding: 0;
+  background-color: transparent;
+  color: #c3c3c3;
+  /* Fit 80 chars in the block without side-scroll for large screens */
+  font-size: .9rem;
+}
+
+/* <del>Pygments</del> Rouge via Jekyll */
+.highlight {
+  margin-bottom: 1rem;
+  /* Disableling the border radius prevents repainting when scrolling on mobile */
+  border-radius: 4px;
+}
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* Quotes */
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 1.8rem;
+  /*color: #7a7a7a;*/
+}
+blockquote::before {
+  display: block;
+  height: 0;
+  content: "“";
+  margin-left: -.8em;
+  font: italic 400%/1 Cochin, Georgia, "Times New Roman", serif;
+  color: #aaa;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+cite {
+  font-style: italic;
+}
+
+q {
+  quotes: '「' '」' '『' '』';
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+sup, sub {
+  line-height: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 2px;
+}
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+
+/*
+ * Custom type for page element
+ *
+ * Extend paragraphs with `.lead` for larger introductory text.
+ */
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+/* Content that align center, for example img */
+.center {
+  display: block;
+  margin: auto;
+}
+
+
+/*
+ * Messages
+ *
+ * Show alert messages to users. You may add it to single elements like a `<p>`,
+ * or to a parent if there are multiple elements to show.
+ */
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.content a {
+  margin: 0 1px;
+}
+
+.content a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+.masthead-title a {
+  color: #505050;
+}
+.masthead-title small {
+  font-size: 75%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+.page,
+.post {
+  margin-bottom: 4em;
+}
+
+/* Blog post or page title */
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  /*margin-top: -.5rem;*/
+  margin-bottom: 0.5rem;
+  color: #8c8b8b;
+  font-size: .9rem;
+}
+.post-date a {
+  color: #8c8b8b !important;
+}
+
+.post hr:not(.post-divide) {
+  margin: 1.5rem 0;
+  border: 0;
+}
+.post hr:not(.post-divide)::after {
+  content: "\2756";
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.post img::after {
+  content: attr(alt);
+  display: block;
+  text-align: center;
+  font-size: .9rem;
+  color: #8c8b8b;
+}
+
+
+/* Footnotes */
+a.footnote:hover {
+  border-bottom: none;
+}
+a.footnote::before {
+  content: "注";
+  padding: 0 2px;
+}
+a.footnote::after {
+  content: "";
+  padding-right: 2px;
+}
+div.footnotes > ol {
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+}
+div.footnotes > ol p {
+  margin-bottom: 0.5rem;
+}
+div.footnotes::before {
+  content: "";
+  display: block;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid;
+  width: 20%;
+}
+
+
+.aside-title {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+/**
+ * Home Page Styles
+ *
+ * Post List and more
+ */
+
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts li {
+  box-sizing: border-box;
+}
+.related-posts .heading {
+  margin-bottom: 0.3rem;
+  font-weight: normal;
+  clear: both;
+}
+
+/*
+ * Dot Leaders
+ * https://www.w3.org/Style/Examples/007/leaders.en.html
+ */
+ul.related-posts {
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+ul.related-posts .heading::after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+"· · · · · · · · · · · · · · · · · · · · "
+}
+
+ul.related-posts a {
+  background-color: #ffffff;
+  color: #000000;
+}
+ul.related-posts .timestamp {
+  float: right;
+  padding-left: 5px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+/* HACK: hover style for dot leaders */
+ul.related-posts li a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+ul.related-posts li a:hover > span {
+  border-bottom: 1px solid;
+}

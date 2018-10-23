@@ -1,0 +1,71 @@
+title: 王爵的技术博客
+url: https://blog.biezhi.me
+baseurl: /blog
+cdnurl: /blog
+description: >
+  偶尔写点东西。
+
+permalink: /posts/:year/:month/:title.html
+
+color: '#dc322f'
+analytics: 
+disqus: blog-biezhi-me
+
+markdown: kramdown
+highlighter: rouge
+paginate: 15
+
+# 作者信息
+author:
+  name: biezhi
+  email: biezhi.me@gmail.com
+  photo: /public/images/avatar.jpeg
+
+# 社交信息
+socials:
+  - title: Github
+    icon: github
+    url: https://github.com/biezhi
+  - title: Twitter
+    icon: twitter
+    url: https://twitter.com/biezhii
+  - title: Youtube
+    icon: youtube
+    url: https://www.youtube.com/channel/UCmlhPmTdqYhRWwWZWSIBwGw
+  - title: Telegram Group
+    icon: telegram
+    url: https://telegram.me/github_cn
+
+# 友链
+links:
+  - title: seoui
+    url: http://blog.seoui.com/
+  - title: Data羊
+    url: http://www.datayang.com/
+  - title: HongQuan'Blog
+    url: https://www.devtool.top/
+  - title: 二三克
+    url: https://same.blog/
+  - title: vzardlloo
+    url: https://vzardlloo.github.io/
+  - title: Bakumon
+    url: https://bakumon.me/blog
+  - title: sunzhenyu
+    url: https://sunzhenyu.net/
+
+# html 压缩
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+  endings: all
+  startings: [html, head, body]
+
+# sass 解析
+sass:
+  sass_dir: public/css
+  style: compressed
+
+# 插件
+plugins:
+  - jekyll-paginate
+  - jekyll-feed

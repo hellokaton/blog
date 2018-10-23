@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+{% include head.html %}
+
+<body class="theme-base-08">
+
+  <main class="content container">
+    {{content}}
+  </main>
+
+  {% include sidebar.html %}
+
+  <script src="{{site.baseurl}}/public/js/drawer.min.js"></script>
+
+  {% include jsblock.html %}
+
+</body>
+
+</html>

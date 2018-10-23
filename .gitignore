@@ -1,0 +1,25 @@
+# Ignore docs files
+_gh_pages
+_site
+.ruby-version
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+
+# OS or Editor folders
+.DS_Store
+.idea
+.vscode
+
+# Folders to ignore
+.sass-cache
+*.lock

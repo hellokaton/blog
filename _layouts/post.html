@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1 class="post-title">{{page.title}}</h1>
+  <div class="post-date">
+    <span><span class="icon icon-calendar"></span> 发表于 <time datetime="{{page.date | date_to_xmlschema}}">{{page.date |
+        date: '%Y年%m月%d日'}}</time> &middot;</span>
+    {% if page.categories.size != 0 %}
+    归类于 {% for cat in page.categories %}
+    <a href="{{ site.baseurl }}/categories.html#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+    &middot;
+    {% endfor %}
+    {% endif %}
+    阅读量 <span id="busuanzi_value_page_pv">加载中...</span>
+  </div>
+  <hr class="post-divide">
+  {{content}}
+</article>
+
+{% if page.tags.size != 0 %}
+<span class="tags">
+  标签：
+  {% for tag in page.tags %}
+  <a href="{{ site.baseurl }}/tags.html#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>&nbsp;
+  {% endfor %}
+</span>
+{% endif %}
+
+<!-- Add Disqus Comments -->
+{% if site.disqus %}
+{% include disqus.html %}
+{% endif %}
