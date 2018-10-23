@@ -56,6 +56,10 @@ links:
     url: http://codefun007.xyz/
   - title: hweining's garden
     url: https://hweining.online/
+  - title: Bakumon
+    url: https://bakumon.me/blog/
+  - title: 练涛
+    url: https://blog.liantao.me/
 
 # html 压缩
 compress_html:
