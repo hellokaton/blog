@@ -15,7 +15,7 @@ layout: compress
 
   {% include sidebar.html %}
 
-  <script src="{{site.baseurl}}/public/js/drawer.min.js"></script>
+  <script src="{{ '/public/js/drawer.min.js' | prepend: site.cdnurl }}"></script>
 
   {% include jsblock.html %}
 

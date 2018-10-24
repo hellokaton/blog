@@ -1,7 +1,7 @@
 title: 王爵的技术博客
 url: https://blog.biezhi.me
 baseurl: ''
-cdnurl: ''
+cdnurl: 'https://blog-biezhi-me-1251171175.cos.ap-shanghai.myqcloud.com'
 description: >
   偶尔写点东西。
 

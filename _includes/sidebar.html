@@ -20,13 +20,13 @@
 <div id="_backdrop"></div>
 <a id="_menu" href="#_sidebar">☰</a>
 
-<aside id="_sidebar" class="sidebar" {% if image %}style="background-image:url('{{ image | prepend: site.baseurl}}')"
-  {% endif %}>
+<aside id="_sidebar" class="sidebar" {% if image %}style="background-image:url('{{ image | prepend: site.cdnurl}}')" {%
+  endif %}>
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}" title="{{site.title}}">
-          <img src="{{ site.baseurl }}/public/images/logo-white.png" alt="{{site.title}}">
+          <img src="{{ '/public/images/logo-white.png' | prepend: site.cdnurl }}" alt="{{site.title}}">
         </a>
       </h1>
       {{site.description | markdownify}}
