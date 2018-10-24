@@ -8,7 +8,8 @@
     {% if page.tag %} {{site.data.tags[page.tag].name}} {% else %} {{page.title}} {% endif %} - {{site.title}}
     {% endif %}
   </title>
-  <link rel="stylesheet" href="{{ '/public/css/styles.css' | prepend: site.cdnurl }}">
+  <!-- <link rel="stylesheet" href="{{ '/public/css/styles.css' | prepend: site.cdnurl }}"> -->
+  <link rel="stylesheet" href="{{ '/public/css/styles.css' | prepend: site.baseurl }}">
 
   {% assign color = page.color %}
 
@@ -50,7 +51,7 @@
   <!-- RSS -->
   <link rel="alternate" type="application/feed+xml" title="{{site.title}}" href="{{site.baseurl}}/feed.xml">
   <link rel="manifest" href="/manifest.json">
-  {{ if site.analytics }}
+  {{% if site.analytics %}}
   <script async>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -67,6 +68,6 @@
     ga('create', '{{site.analytics}}', 'auto');
     ga('send', 'pageview');
   </script>
-  {{end}}
+  {{% endif %}}
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </head>
