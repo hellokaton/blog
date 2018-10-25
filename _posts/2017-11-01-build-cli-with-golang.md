@@ -7,12 +7,12 @@ tags: ['golang', '命令行']
 
 ## 背景
 
-我是个Java开发者，做了很多的开源软件，经常会有在终端下提供命令行帮助程序的这种小需求，一般大家实现这个需求也就这么几种办法。
+我是个 Java 开发者，做过非常多开源软件，经常会有在终端下提供命令行帮助程序的这种小需求，一般大家实现这个需求也就这么几种办法。
 
-1. 编写批处理或者Shell（Windows和Linux需要写两次）
+1. 编写批处理或者 Shell（Windows 和 Linux需要写两次）
 2. 使用编程语言解决（golang、python都是不错的跨平台选择）
 
-程序员都是懒人，我才不要写两次呢~ 很早之前也用Python写过类似的程序，但是打包出来的结果比较大，另一方面Go语言越来越火，也是我比较喜欢的一门编程语言，而且支持跨平台，所以就选用它了。
+程序员都是懒人，我才不要写两次呢~ 很早之前也用Python写过类似的程序，但是打包出来的结果比较大，另一方面 Go 语言越来越火，也是我比较喜欢的一门编程语言，而且支持跨平台，所以就选用它了。
 
 在这篇小文中我将教你编写一个可以查看本地天气的小程序，比较简单，你可以通过学习这篇文章做出自己中意的小工具。
 
@@ -22,26 +22,26 @@ tags: ['golang', '命令行']
 
 ## 安装环境
 
-我们在开始之前先要准备Go语言的环境，如果你已经安装过了这步可以略过。你可以在 [这里](https://golang.org/dl/){:target="_blank"} 下载到最新版的Go语言版本，如果你的网络环境被迫是下面这个样子。
+我们在开始之前先要准备 Go 语言的环境，如果你已经安装过了这步可以略过。你可以在 [这里](https://golang.org/dl/){:target="_blank"} 下载到最新版的 Go 语言版本，如果你的网络环境被迫是下面这个样子。
 
 ![timeout]({{ "/public/images/2017/11/p3f4ktao8kjmaro78unjugogs5.png" | prepend: site.cdnurl }} "timeout")
 
-你可以在 [Golang中国](https://golangtc.com/download){:target="_blank"} 下载最新发布包。Go语言环境的安装方式也有好几种，我们选择最简单的方式：**标准包安装**。
+你可以在 [Golang中国](https://golangtc.com/download){:target="_blank"} 下载最新发布包。Go 语言环境的安装方式也有好几种，我们选择最简单的方式：**标准包安装**。
 
-Mac环境下下载以 `.pkg` 结尾的包文件，在Windows下下载 `.msi` 结尾的文件，下载好后傻瓜式安装即可。
+Mac 环境下下载以 `.pkg` 结尾的包文件，在 Windows 下下载 `.msi` 结尾的文件，下载好后傻瓜式安装即可。
 
 > 注意你的操作系统架构不要选错，Linux源码安装这里不讲啦。
 
 ### 配置环境变量
 
-学习很多编程语言都需要配置环境变量，安装软件的时候其实也有部分程序静默的帮我们做了这件事，在前面我们安装了Go语言，下面我们了解下 Go 语言中的环境变量以及如何配置。
+学习很多编程语言都需要配置环境变量，安装软件的时候其实也有部分程序静默的帮我们做了这件事，在前面我们安装了 Go 语言，下面我们了解下 Go 语言中的环境变量以及如何配置。
 
-- GOROOT：Go的安装路径
-- GOPATH：告诉Go 命令和其他相关工具，在那里去找到安装在你系统上的Go包。
+- `GOROOT`：Go 的安装路径
+- `GOPATH`：告诉 Go 命令和其他相关工具，在那里去找到安装在你系统上的 Go 包。
 
 那么我们创建一个工作目录来存储自己编写的源码包吧~
 
-在 Windows 下假设是 `D:/go` 这个目录，Linux/MacOSX 下假设是 `~/workspace/golang` 这个目录。我目前是MacOSX系统，就按照这个设置环境变量了。
+在 Windows 下假设是 `D:/go` 这个目录，Linux/MacOSX 下假设是 `~/workspace/golang` 这个目录。我目前是 Mac 系统，就按照这个设置环境变量了。
 
 1. 加入环境变量 `export GOROOT=/usr/local/go`
 2. 加入环境变量 `export GOPATH=/Users/biezhi/workspace/golang`
@@ -63,16 +63,16 @@ go version go1.8.3 darwin/amd64
 
 **声明变量、常量**
 
-Java中
+Java 中
 
 ```java
 private String name = "biezhi";
 public static final String VERSION = "0.2.1";
 ```
 
-Golang中
+Golang 中
 
-```shell
+```golang
 name := "biezhi"
 const version = "0.2.1"
 ```
@@ -81,7 +81,7 @@ const version = "0.2.1"
 
 **类和对象**
 
-Java中
+Java 中
 
 ```java
 public class Config {
@@ -96,7 +96,7 @@ config.setKey("name");
 config.setValue("biezhi");
 ```
 
-Golang中
+Golang 中
 
 ```shell
 type Config struct {
@@ -108,13 +108,13 @@ type Config struct {
 conf := Config{key: "name", value: "biezhi"}
 ```
 
-矮油，又tm简洁了。。。
+矮油，又 tm 简洁了。。。
 
 > golang中没有class关键字，却引入了type，golang中更强调类型。
 
 **函数返回值**
 
-Java中
+Java 中
 
 ```java
 public String getFileName(){
@@ -122,9 +122,9 @@ public String getFileName(){
 }
 ```
 
-这里如果需要返回多个值，需要用类或者Map类型替换。
+这里如果需要返回多个值，需要用类或者 Map 类型替换。
 
-Golang中
+Golang 中
 
 ```shell
 func getFileNmae() (string, error)  {
@@ -132,9 +132,9 @@ func getFileNmae() (string, error)  {
 }
 ```
 
-Go语言天生支持多返回值（毕竟后起之秀，社会社会）
+Go 语言天生支持多返回值（毕竟后起之秀，社会社会）
 
-Java中关闭流的操作一般会写这样的代码
+Java 中关闭流的操作一般会写这样的代码
 
 ```java
 try {
@@ -146,7 +146,7 @@ try {
 }
 ```
 
-在 Go 中没有finally，试试defer
+在 Go 中没有 `finally`，试试 `defer`
 
 ```go
 func CopyFile(dstName, srcName string) (written int64, err error) {
@@ -165,7 +165,7 @@ func CopyFile(dstName, srcName string) (written int64, err error) {
 }
 ```
 
-`CopyFile` 方法简单的实现了文件内容的拷贝功能，将源文件的内容拷贝到目标文件。乍一看还没什么问题，不过Golang中的资源也是需要释放的，假如 `os.Create` 方法的调用出了错误，下面的语句会直接 `return`，导致这两个打开的文件没有机会被释放。这个时候，`defer` 就可以派上用场了。
+`CopyFile` 方法简单的实现了文件内容的拷贝功能，将源文件的内容拷贝到目标文件。乍一看还没什么问题，不过Golang 中的资源也是需要释放的，假如 `os.Create` 方法的调用出了错误，下面的语句会直接 `return`，导致这两个打开的文件没有机会被释放。这个时候，`defer` 就可以派上用场了。
 
 前面 `BB` 了这么多只是简单的让大家在脑海中过一下Go的代码都长什么样。下面开始我们的正式话题了，如果你对基础还是不了解可以去看基础部分的书籍、资料（找不到私信我）。
 
@@ -227,7 +227,7 @@ func main() {
 }
 ```
 
-此时已经可以获取到终端输入的参数了，那么接下来该找个接口调用天气API了，我找了 [这个](http://www.sojson.com/blog/234.html){:target="_blank"} 免费的API接口进行调用。我们需要编写一个方法用于HTTP请求。
+此时已经可以获取到终端输入的参数了，那么接下来该找个接口调用天气 API 了，我找了 [这个](http://www.sojson.com/blog/234.html){:target="_blank"} 免费的API接口进行调用。我们需要编写一个方法用于HTTP请求。
 
 ```shell
 func Request(url string) (string, error) {
@@ -241,7 +241,7 @@ func Request(url string) (string, error) {
 }
 ```
 
-果然比Java方便啊，这个函数很简单，输入一个url，返回响应的Body为String。我们将输入的城市传递进去即可，默认是 `上海`。
+果然比Java方便啊，这个函数很简单，输入一个 URL，返回响应的 Body 为字符串。我们将输入的城市传递进去即可，默认是 `上海`。
 
 ```shell
 var city string
@@ -295,7 +295,7 @@ type Day struct {
 }
 ```
 
-类型定义好后就可以把HTTP请求得到的JSON解析为定义好的类型了。
+类型定义好后就可以把HTTP请求得到的 JSON 解析为定义好的类型了。
 
 ```shell
 var r Response
@@ -309,7 +309,7 @@ if r.Status != 200 {
 }
 ```
 
-这里使用了 Go 自带的JSON解析（哎，我大Java咋没有呢。。），最后我们将得到的数据输出出来就Ok了。
+这里使用了 Go 自带的JSON解析（哎，我大 Java 咋没有呢。。），最后我们将得到的数据输出出来就 Ok 了。
 
 ```shell
 func Print(day string, r Response) {
@@ -441,7 +441,7 @@ func main() {
 }
 ```
 
-我直接给出了全部代码，就`40`多行完成了~ 运行一下
+我直接给出了全部代码，就 `40` 多行完成了~ 运行一下
 
 ```bash
 » go build -o weather-cli utils.go types.go cli_main.go && ./weather-cli
