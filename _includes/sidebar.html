@@ -3,12 +3,10 @@
 {% unless image %}
 {% if page.tag %}
 {% assign tag = site.data.tags[page.tag] %}
-{% assign image = tag.image %}
 {% else %}
 {% if page.tags.size > 0 %}
 {% assign tag_name = page.tags[0] %}
 {% assign tag = site.data.tags[tag_name] %}
-{% assign image = tag.image %}
 {% endif %}
 {% endif %}
 {% endunless %}
