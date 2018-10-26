@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 照片
+title: 
 disqus: false
 permalink: photos.html
 image: /public/images/life.jpeg

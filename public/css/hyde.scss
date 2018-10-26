@@ -334,6 +334,10 @@
   content: "\ea9d";
 }
 
+.icon.icon-price-tags:before {
+  content: "\e936";
+}
+
 .icon.icon-stackoverflow:before {
   content: "\ead0";
 }
@@ -512,13 +516,18 @@
 
 /* Red */
 .theme-base-08 .sidebar {
-  background-color: #dc322f;
+  background-color: #c50502;
 }
 
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
-  color: #dc322f;
+  color: #c50502;
 }
+
+.theme-base-08 .content .vglnk {
+  color: #f05f70;
+}
+
 
 /* Orange */
 .theme-base-09 .sidebar {

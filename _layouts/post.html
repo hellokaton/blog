@@ -21,7 +21,7 @@ layout: default
 
 {% if page.tags.size != 0 %}
 <span class="tags">
-  标签：
+  <span class="icon icon-price-tags" style="color: #8c8b8b;font-size: .9rem;">&nbsp;</span>
   {% for tag in page.tags %}
   <a href="{{ site.baseurl }}/tags.html#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>&nbsp;
   {% endfor %}

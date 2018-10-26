@@ -1,0 +1,33 @@
+{% assign color = page.color %}
+
+{% unless color %}
+{% if page.tag %}
+{% assign tag = site.data.tags[page.tag] %}
+{% assign color = tag.color %}
+{% else %}
+{% if page.tags.size > 0 %}
+{% assign tag_name = page.tags[0] %}
+{% assign tag = site.data.tags[tag_name] %}
+{% assign color = tag.color %}
+{% endif %}
+{% endif %}
+{% endunless %}
+
+{% unless color %}
+{% assign color = site.color %}
+{% endunless %}
+
+<style>
+    .content a,
+    .related-posts li a:hover {
+      color: {{color}};
+    }
+    ::selection {
+      color: #fff;
+      background: {{color}};
+    }
+    ::-moz-selection {
+      color: #fff;
+      background: {{color}};
+    }
+</style>
