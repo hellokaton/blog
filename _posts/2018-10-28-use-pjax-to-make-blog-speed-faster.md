@@ -108,7 +108,7 @@ InstantClick.init('mousedown');
 InstantClick.init(80);
 ```
 
-当访问者将鼠标悬停你的超链接后，InstantClick 将根据你设置的时间延迟预加载，单位是毫秒。建议延迟是 `50ms ~ 100ms`。超过 `100ms` 实际上可能比 `mousedown` 要慢，小于 `50ms` 和 `mouseover` 差不多，我的博客托管在 Github，所以我使用了默认的。
+当访问者将鼠标悬停你的超链接后，InstantClick 将根据你设置的时间延迟预加载，单位是毫秒。建议延迟是 `50ms ~ 100ms`。超过 `100ms` 实际上可能比 `mousedown` 要慢，小于 `50ms` 和 `mouseover` 差不多，我的博客托管在 Github，我使用了 `mousedown` 方式加载。
 
 **回调事件**
 
