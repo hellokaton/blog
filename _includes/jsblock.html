@@ -1,6 +1,5 @@
 <script src="{{ '/public/js/instantclick.min.js' | prepend: site.cdnurl }}" data-no-instant></script>
 <script type="text/javascript">
-	InstantClick.init('mousedown');
 	InstantClick.on('change', function (isInitialLoad) {
 		var blocks = document.querySelectorAll('pre code');
 		for (var i = 0; i < blocks.length; i++) {
@@ -11,6 +10,8 @@
 		}
 		$.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
 	});
+
+	InstantClick.init('mousedown');
 
 	/***
 	 * Put your custom script here
