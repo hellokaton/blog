@@ -399,13 +399,21 @@ th {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 
 /* Blog post or page title */
 .page-title,
 .post-title {
   margin-top: 0;
+}
+
+.post-tags {
+  margin-bottom: 1rem;
+}
+
+.post-pagination {
+  margin-bottom: 6rem;
 }
 
 /* Meta data line below post title */
@@ -511,6 +519,19 @@ div.footnotes::before {
   font-weight: normal;
   clear: both;
 }
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
 
 /*
  * Dot Leaders

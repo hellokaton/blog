@@ -28,6 +28,22 @@ layout: default
 </span>
 {% endif %}
 
+<div style="margin-top: 1rem;padding-left: 0;">
+  <hr class="post-divide" />
+</div>
+<div class="post-pagination">
+  {% if page.previous %}
+  <a class="float-left" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">« {{
+    page.previous.title }}</a>
+  {% endif %}
+
+  {% if page.next %}
+  <a class="float-right" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}
+    »</a>
+  {% endif %}
+</div>
+<div class="clearfix"></div>
+
 <!-- Add Disqus Comments -->
 {% if site.disqus %}
 {% include disqus.html %}
