@@ -80,7 +80,7 @@ InstantClick 又是什么呢？这是一个 JavaScript 库，只有 `2.7kb`。�
 
 ### 安装 InstantClick
 
-安装它非常简单，你只需要在你的页面 `body` 标签结束前加入它的 JS 代码。
+安装它非常简单，只需要在你的页面 `body` 标签结束前加入它的 JS 代码。
 
 ```html
 ...
