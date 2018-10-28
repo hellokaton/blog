@@ -165,6 +165,6 @@ InstantClick.on('change', function (isInitialLoad) {
 
 ## 参考资料
 
-- [Pjax 是什么以及为什么推荐大家用](http://www.cnblogs.com/shihao/archive/2013/04/18/3028969.html)
-- [PJAX 原理和使用](https://www.fanhaobai.com/2017/07/pjax.html)
-- [instantclick](http://instantclick.io/)
+- [Pjax 是什么以及为什么推荐大家用](http://www.cnblogs.com/shihao/archive/2013/04/18/3028969.html){:target="_blank"}
+- [PJAX 原理和使用](https://www.fanhaobai.com/2017/07/pjax.html){:target="_blank"}
+- [instantclick](http://instantclick.io/){:target="_blank"}
