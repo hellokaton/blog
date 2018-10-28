@@ -1,5 +1,6 @@
 <script src="{{ '/public/js/instantclick.min.js' | prepend: site.cdnurl }}" data-no-instant></script>
 <script type="text/javascript">
+	var isLoad = false;
 	InstantClick.on('change', function (isInitialLoad) {
 		var blocks = document.querySelectorAll('pre code');
 		for (var i = 0; i < blocks.length; i++) {
@@ -8,7 +9,10 @@
 		if (isInitialLoad === false) {
 			if (typeof ga !== 'undefined') ga('send', 'pageview', location.pathname + location.search);
 		}
-		$.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+		if (!isLoad) {
+			isLoad = true;
+			$.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+		}
 	});
 
 	InstantClick.init('mousedown');
