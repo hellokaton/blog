@@ -1,9 +1,9 @@
-title: 王爵的技术博客
+title: 编程和酒
 url: https://blog.biezhi.me
 baseurl: ''
 cdnurl: 'https://blog-biezhi-me-1251171175.cos.ap-shanghai.myqcloud.com'
 description: >
-  偶尔写点东西。
+  关于编程、人生、认知和我的思想。
 
 permalink: /:year/:month/:title.html
 
