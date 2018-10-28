@@ -14,7 +14,8 @@ disqus: blog-biezhi-me
 
 markdown: kramdown
 highlighter: rouge
-paginate: 15
+paginate: 12
+paginate_path: "/page/:num"
 
 # 作者信息
 author:

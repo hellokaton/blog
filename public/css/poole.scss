@@ -32,12 +32,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: pingfang sc, helvetica neue, Helvetica, STHeitiSC-Light, Arial, sans-serif;
+  font-family: helvetica neue, Helvetica, STHeitiSC-Light, Arial, sans-serif;
   background-color: #fff;
   color: #161c1f;
   -webkit-text-size-adjust: 100%;
@@ -214,7 +215,7 @@ kbd {
 code {
   padding: .18em 0.28em;
   /* Could be mistaken for a link if the user choses a similar link-color, so better no colored inline code. */
-  font-size: .95rem;
+  font-size: .9rem;
   background-color: #e8e8e8;
   color: #000000;
 }

@@ -29,7 +29,7 @@ layout: default
     {% if paginator.previous_page == 1 %}
     <a href="/">上一页</a>
     {% else %}
-    <a href="/page{{paginator.previous_page}}">上一页</a>
+    <a href="/page/{{paginator.previous_page}}">上一页</a>
     {% endif %}
     {% else %}
     <span class="previous disabled">上一页</span>
@@ -45,12 +45,12 @@ layout: default
     {% if count == paginator.page %}
     <span class="current-page">{{count}}</span>
     {% else %}
-    <a href="/page{{count}}">{{count}}</a>
+    <a href="/page/{{count}}">{{count}}</a>
     {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-    <a class="next" href="/page{{paginator.next_page}}">下一页</a>
+    <a class="next" href="/page/{{paginator.next_page}}">下一页</a>
     {% else %}
     <span class="next disabled">下一页</span>
     {% endif %}
