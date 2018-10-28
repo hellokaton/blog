@@ -14,7 +14,7 @@ tags: ['博客']
 
 ajax 可以实现网站的局部刷新，但是 ajax 不会修改网站的 URL，它主要是为了异步的获取某个资源（可能是一段 JSON 或者一个页面）。很多人可能都听过目前流行的 `SPA`（Single Page Application）开发，它可以实现加载单个 HTML 页面并在用户与应用交互时动态更新该页面的内容，页面不会刷新；切换页面时 URL 会发生改变，这样比起刷新整个页面的体验要好的多，一般使用 MVVM 框架来实现这种单页应用，比如流行的 Vue.js。
 
-而我们今天介绍的是 pjax，pjax 的全称是 `pushState + ajax`，它其实是 JQuery 的一个插件，你可以了解一下 [jquery-pjax](https://github.com/defunkt/jquery-pjax){:target="_blank"} 这个项目。[pushState](https://developer.mozilla.org/zh-CN/docs/Web/API/History_API){:target="_blank"} 是 HTML5 出现的 API，可以实现将要访问的请求压入一个类似队列的历史堆栈中，pjax 本质上是对 ajax 的封装，通过 `pushState + ajax` 实现页面的缓存和本地存储，让我们看起来页面没有刷新，URL 却会发生改变，你可以点击我的博客链接看到。
+而我们今天介绍的是 pjax，pjax 的全称是 `pushState + ajax`，它其实是 JQuery 的一个插件，你可以了解一下 [jquery-pjax](https://github.com/defunkt/jquery-pjax){:target="_blank"} 这个项目。[pushState](https://developer.mozilla.org/zh-CN/docs/Web/API/History_API){:target="_blank"} 是 HTML5 出现的 API，可以实现将要访问的请求压入一个历史堆栈中，pjax 本质上是对 ajax 的封装，通过 `pushState + ajax` 实现页面的缓存和本地存储，让我们看起来页面没有刷新，URL 却会发生改变，你可以点击我的博客链接看到。
 
 ## 实现原理
 
