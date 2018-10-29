@@ -10,6 +10,7 @@ permalink: /:year/:month/:title.html
 image: /public/images/mountains.jpg
 color: '#dc322f'
 analytics: 
+baidu: 2209f3e596f3e0c61a293f49a2f65ba3
 disqus: blog-biezhi-me
 
 markdown: kramdown
