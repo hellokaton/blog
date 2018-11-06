@@ -3,7 +3,7 @@ layout: post
 title: 打造 Mac 下高颜值好用的终端环境
 ---
 
-如果你觉得当前的终端操作不符合你的气质，可以看看我今天来介绍的 Mac 终端利器，不过我不会介绍太多细节操作。
+如果你觉得当前的终端操作不符合你的气质，可以看看我今天来介绍的 Mac 终端利器，不过不会介绍太多细节操作。
 
 ![biezhi iterm]({{ "/public/images/2018/11/biezhi_iterm2.png" | prepend: site.cdnurl }} "biezhi")
 
@@ -38,7 +38,7 @@ brew cask install iterm2
 
 ## 代码配色
 
-默认的界面还是略显丑陋的，我们来设置一下代码的配色吧。
+默认的界面还是略显丑陋的，我们来设置一下代码配色吧。
 
 <img src='{{ "/public/images/2018/11/open_settings.png" | prepend: site.cdnurl }}'  alt="iTerm2 设置" width="400px"/>
 
@@ -92,11 +92,11 @@ drwxr-xr-x  198 biezhi  staff   6336 Nov  6 11:34 xrdb
 
 ## 安装字体
 
-为什么要安装字体呢？默认情况电脑的字体其实是可以用的，但是想要图标的这种字体就没法儿了：
+为什么要安装字体呢？我们电脑的字体其实是可以用的，但是想要图标的这种字体就没法儿了：
 
 <img src='{{ "/public/images/2018/11/hack_font.png" | prepend: site.cdnurl }}'  alt="iTerm2 设置" width="70%"/>
 
-而这些图标字体其实是非 `ASCII` 码的字体，在 iTerm2 中可以进行配置的，所以我们先要安装这个字体。这款字体叫 [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)，它支持下面这么多种图标。
+而这些图标字体其实是非 `ASCII` 码字体，在 iTerm2 中可以进行配置，所以先要安装这个字体。这款字体叫 [nerd-fonts](https://github.com/ryanoasis/nerd-fonts){:target="_blank"}，它支持下面这么多种图标。
 
 ![nerd-fonts]({{ "/public/images/2018/11/sankey-glyphs-combined-diagram.svg" | prepend: site.cdnurl }} "nerd-fonts")
 
@@ -107,7 +107,7 @@ brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 ```
 
-> 注意：安装的时候其实会去 Github 下载字体，如果你下载失败可能是被墙了。
+> 注意：安装的时候会去 Github 下载字体，如果你下载失败可能是被墙了。
 > 
 > 那么可以通过 `https_proxy=127.0.0.1:1087 brew cask reinstall font-hack-nerd-font` 的方式安装，前提是你开启了代理。
 
@@ -117,7 +117,7 @@ brew cask install font-hack-nerd-font
 
 ![选择字体]({{ "/public/images/2018/11/choose_font.png" | prepend: site.cdnurl }} "选择字体")
 
-这里选择的字体是非 ASCII 码字符的字体，不要设置错了！选择 OK 之后关闭即可。
+这里选择的字体是非 ASCII 码字符的字体，不要设置错了！选择好之后关闭即可。
 
 # 安装 zsh
 
@@ -136,7 +136,7 @@ chsh -s $(which zsh)
 
 修改时会提示你输入密码。
 
-现在 zsh 安装完成了，安装虽简单，可配置麻烦啊，这你能忍吗？？不能！
+现在 zsh 安装完成了，安装虽简单，可配置麻烦啊，这你能忍吗？？当然不能！
 
 于是，[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh){:target="_blank"} 出现了，有了它 zsh 配置起来就方便多了，来安装一下它。
 
