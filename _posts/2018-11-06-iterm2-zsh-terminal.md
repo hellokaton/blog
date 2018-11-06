@@ -122,7 +122,7 @@ brew cask install font-hack-nerd-font
 # 安装 zsh
 
 ```shell
-$ brew install zsh
+brew install zsh
 ```
 
 ![安装 zsh]({{ "/public/images/2018/11/install_zsh.png" | prepend: site.cdnurl }} "安装 zsh")
@@ -138,7 +138,7 @@ chsh -s $(which zsh)
 
 现在 zsh 安装完成了，安装虽简单，可配置麻烦啊，这你能忍吗？？不能！
 
-于是，[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) 出现了，有了它 zsh 配置起来就方便多了，来安装一下它。
+于是，[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh){:target="_blank"} 出现了，有了它 zsh 配置起来就方便多了，来安装一下它。
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -205,7 +205,7 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 ![simple powerlevel9k]({{ "/public/images/2018/11/simple_powerlevel9k.png" | prepend: site.cdnurl }} "simple powerlevel9k")
 
-更详细的配置可以参考 [Prompt Customization](https://github.com/bhilburn/powerlevel9k#prompt-customization) 和 [Stylizing Your Prompt](https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt)。
+更详细的配置可以参考 [Prompt Customization](https://github.com/bhilburn/powerlevel9k#prompt-customization){:target="_blank"} 和 [Stylizing Your Prompt](https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt){:target="_blank"}。
 
 # 别名设置
 
@@ -230,7 +230,7 @@ zsh 那些酷插件可多了去了，我只推荐几个我认为比较实用的�
 
 这个插件是用于解压的，解压各种包命令多可能会手误，用它只需要输入 `x biezhi.zip` 即可。
 
-在 `.zshrc` 的 plugins 中添加 `extract` 配置即可，它支持解压 [这些](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/extract) 文件。
+在 `.zshrc` 的 plugins 中添加 `extract` 配置即可，它支持解压 [这些](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/extract){:target="_blank"} 文件。
 
 ## autojump
 
@@ -282,7 +282,7 @@ brew install zsh-autosuggestions
 
 ## colors
 
-[colors](https://github.com/athityakumar/colorls) 是一个 Ruby 实现的脚本，它可以配合 powerlevel9k 显示我们电脑上的文件图标（应该是通过后缀判断的），使用的效果如下：
+[colors](https://github.com/athityakumar/colorls){:target="_blank"} 是一个 Ruby 实现的脚本，它可以配合 powerlevel9k 显示我们电脑上的文件图标（应该是通过后缀判断的），使用的效果如下：
 
 ![colors]({{ "/public/images/2018/11/colors.png" | prepend: site.cdnurl }} "colors")
 
