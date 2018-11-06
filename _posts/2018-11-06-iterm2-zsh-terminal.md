@@ -40,13 +40,13 @@ brew cask install iterm2
 
 默认的界面还是略显丑陋的，我们来设置一下代码的配色吧。
 
-<img src='{{ "/public/images/2018/11/open_settings.png" | prepend: site.cdnurl }}'  alt="iTerm2 设置" width="300px"/>
+<img src='{{ "/public/images/2018/11/open_settings.png" | prepend: site.cdnurl }}'  alt="iTerm2 设置" width="400px"/>
 
 先检查下终端颜色配置为 `xterm-256color`，位置在 `iTerm2 -> Preferences -> Profiles -> Terminal`。
 
 ![iTerm2 终端颜色值]({{ "/public/images/2018/11/iterm_terminal_color.png" | prepend: site.cdnurl }} "iTerm2 终端颜色值")
 
-然后我们就可以设置配色了，默认情况下 `iTerm2` 只有 7 种自带的配色，当然满足不了我们高颜值的需求了。有人就开源了一款叫 [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes){:target="_blank"} 的配色合集，里面有各种经典、常用的配色方案，我们来使用 Git 下载到本地。
+然后就可以设置配色了，默认情况下 `iTerm2` 只有 7 种自带的配色，当然满足不了我们高颜值的需求了。有人就开源了一款叫 [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes){:target="_blank"} 的配色合集，里面有各种经典、常用的配色方案，来使用 Git 下载到本地。
 
 ```shell
 mkdir ~/.iterm2 && cd ~/.iterm2
@@ -76,7 +76,7 @@ drwxr-xr-x    3 biezhi  staff     96 Nov  6 11:34 xfce4terminal
 drwxr-xr-x  198 biezhi  staff   6336 Nov  6 11:34 xrdb
 ```
 
-下面我们需要导入配色方案。
+下面需要导入配色方案。
 
 ![导入配色方案]({{ "/public/images/2018/11/import_color_schemes.png" | prepend: site.cdnurl }} "导入配色方案")
 
@@ -84,7 +84,7 @@ drwxr-xr-x  198 biezhi  staff   6336 Nov  6 11:34 xrdb
 
 > 选择 `schemes` 文件夹内的所有配色方案。
 
-导入成功后我们就可以选择一些流行的配色方案了。
+导入成功后就可以选择一些流行的配色方案了。
 
 ![选择配色方案]({{ "/public/images/2018/11/select_color_scheme.png" | prepend: site.cdnurl }} "选择配色方案")
 
@@ -92,7 +92,7 @@ drwxr-xr-x  198 biezhi  staff   6336 Nov  6 11:34 xrdb
 
 ## 安装字体
 
-为什么要安装字体呢？默认情况我们电脑的字体其实是可以用的，但是想要这种效果。
+为什么要安装字体呢？默认情况电脑的字体其实是可以用的，但是想要图标的这种字体就没法儿了：
 
 <img src='{{ "/public/images/2018/11/hack_font.png" | prepend: site.cdnurl }}'  alt="iTerm2 设置" width="70%"/>
 
@@ -111,7 +111,7 @@ brew cask install font-hack-nerd-font
 > 
 > 那么可以通过 `https_proxy=127.0.0.1:1087 brew cask reinstall font-hack-nerd-font` 的方式安装，前提是你开启了代理。
 
-安装成功后我们需要在 iTerm2 中配置一下，在 `iTerm2 -> Preferences -> Profiles -> Text -> Font -> Change Font` 栏位中，Text 下面勾选 `Use a different font for non-ASCII text`，然后在 `Non-ASCII font` 点击 `Change font` 修改：
+安装成功后需要在 iTerm2 中配置一下，在 `iTerm2 -> Preferences -> Profiles -> Text -> Font -> Change Font` 栏位中，Text 下面勾选 `Use a different font for non-ASCII text`，然后在 `Non-ASCII font` 点击 `Change font` 修改：
 
 ![设置字体]({{ "/public/images/2018/11/settings_hack_font.png" | prepend: site.cdnurl }} "设置字体")
 
@@ -127,7 +127,7 @@ brew install zsh
 
 ![安装 zsh]({{ "/public/images/2018/11/install_zsh.png" | prepend: site.cdnurl }} "安装 zsh")
 
-默认的 shell 是 bash，我们需要修改为 zsh：
+默认的 shell 是 bash，需要修改为 zsh：
 
 ```shell
 sudo sh -c "echo $(which zsh) >> /etc/shells"
@@ -146,11 +146,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ![安装 oh-my-zsh]({{ "/public/images/2018/11/install_oh_my_zsh.png" | prepend: site.cdnurl }} "安装 oh-my-zsh")
 
-安装好之后我们可以看到界面发生了一点点变化，同时会产生一个名为 `.zshrc` 的配置文件，在用户家目录下面，我们以后主要就是修改它了。
+安装好之后可以看到界面发生了一点点变化，同时会产生一个名为 `.zshrc` 的配置文件，在用户家目录下面，我们以后主要就是修改它了。
 
 # 配置主题
 
-上面我们看到界面发生变化是因为 `oh-my-zsh` 默认帮我们配置了一个终端主题，你可以打开 `~/.zshrc` 文件看看：
+上面看到界面发生变化是因为 `oh-my-zsh` 默认帮我们配置了一个终端主题，你可以打开 `~/.zshrc` 文件看看：
 
 ```shell
 ZSH_THEME="robbyrussell"
@@ -158,7 +158,7 @@ ZSH_THEME="robbyrussell"
 
 这些主题文件存储在 `~/.oh-my-zsh/themes` 目录下，你也可以使用其他的。
 
-为了实现我们前面想要的酷炫的终端主题，有人写了一个名为 [powerlevel9k](https://github.com/bhilburn/powerlevel9k){:target="_blank"} 的高颜值主题。
+为了实现前面想要的酷炫的终端主题，有人写了一个名为 [powerlevel9k](https://github.com/bhilburn/powerlevel9k){:target="_blank"} 的高颜值主题。
 
 ![nerd-fonts]({{ "/public/images/2018/11/powerlevel9k.gif" | prepend: site.cdnurl }} "nerd-fonts")
 
@@ -260,7 +260,7 @@ brew install autojump
 
 ## zsh-syntax-highlighting
 
-zsh-syntax-highlighting 用于高亮你的 zsh 可用命令，比如我们输入 `sleep`、`cat` 这些命令的时候就会高亮（功能上确实没啥乱用）。
+zsh-syntax-highlighting 用于高亮你的 zsh 可用命令，比如输入 `sleep`、`cat` 这些命令的时候就会高亮（功能上确实没啥乱用）。
 
 ```shell
 brew install zsh-syntax-highlighting
@@ -282,7 +282,7 @@ brew install zsh-autosuggestions
 
 ## colors
 
-[colors](https://github.com/athityakumar/colorls){:target="_blank"} 是一个 Ruby 实现的脚本，它可以配合 powerlevel9k 显示我们电脑上的文件图标（应该是通过后缀判断的），使用的效果如下：
+[colors](https://github.com/athityakumar/colorls){:target="_blank"} 是一个 Ruby 实现的脚本，它可以配合 powerlevel9k 显示电脑上的文件图标（应该是通过后缀判断的），使用的效果如下：
 
 ![colors]({{ "/public/images/2018/11/colors.png" | prepend: site.cdnurl }} "colors")
 
@@ -298,3 +298,19 @@ gem install colorls
 - 输入目录名即可进入，不用 `cd` 了，输入 `..` 即可到上级目录，返回上次目录输入 `-`
 - 输入 `d` 即可看到目录列表
 - 智能的命令纠错功能（需开启 `ENABLE_CORRECTION` 配置）
+
+# 注意点
+
+这样配置后打开 VSCode 就变成这幅样子：
+
+<img src='{{ "/public/images/2018/11/vscode_font.png" | prepend: site.cdnurl }}'  alt="vscode 字体错误" width="450px"/>
+
+如何修复呢？只需要下载 [Menlo-for-Powerline](https://github.com/abertsch/Menlo-for-Powerline) 里的 ttf 字体文件，然后双击安装。安装成功后在 vscode 中配置一项：
+
+```vscode
+"terminal.integrated.fontFamily": "Menlo for Powerline",
+```
+
+这样就会变成下面这个样子了。
+
+<img src='{{ "/public/images/2018/11/vscode_new_font.png" | prepend: site.cdnurl }}'  alt="修复 vscode 字体" width="450px"/>
