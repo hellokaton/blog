@@ -27,13 +27,13 @@ brew install asciinema
 
 **Pip安装**
 
-```bash
+```shell
 sudo pip3 install asciinema
 ```
 
 **Ubuntu**
 
-```bash
+```shell
 sudo apt-add-repository ppa:zanchey/asciinema
 sudo apt-get update
 sudo apt-get install asciinema
@@ -41,19 +41,19 @@ sudo apt-get install asciinema
 
 **Arch Linux**
 
-```bash
+```shell
 pacman -S asciinema
 ```
 
 **Debian**
 
-```bash
+```shell
 sudo apt-get install asciinema
 ```
 
 **Fedora**
 
-```bash
+```shell
 # Fedora < 22
 sudo yum install asciinema
 # Fedora >= 22
@@ -66,7 +66,7 @@ sudo dnf install asciinema
 
 安装ok后，我们来尝试录制一个试试？在你的终端输入 `asciinema rec` 回车后你会看到下面两行输出
 
-```bash
+```shell
 ~ Asciicast recording started.
 ~ Hit Ctrl-D or type "exit" to finish.
 ```
@@ -77,7 +77,7 @@ sudo dnf install asciinema
 
 退出后终端会输出
 
-```bash
+```shell
 ~ Asciicast recording finished.
 ~ Press <Enter> to upload, <Ctrl-C> to cancel.
 ```
@@ -90,13 +90,13 @@ sudo dnf install asciinema
 
 我们前面录制了一个，我可以使用 `asciinema play` 命令在本地回放刚才的录制操作
 
-```bash
+```shell
 asciinema play https://asciinema.org/a/132560
 ```
 
 回放本地的一个文件
 
-```bash
+```shell
 asciinema play /path/132560.json
 ```
 
@@ -104,7 +104,7 @@ asciinema play /path/132560.json
 
 本文中就是使用这种方式的
 
-```bash
+```shell
 <script type="text/javascript" src="https://asciinema.org/a/132560.js"
 id="asciicast-132560" async></script>
 ```
@@ -128,21 +128,21 @@ id="asciicast-132560" async></script>
 
 在 `Asciinema` 的网站上，可以用自己的邮箱进行登录，在本地可以配置一下认证：
 
-```bash
+```shell
 asciinema auth
 vim ~/.config/asciinema/config
 ```
 
 配置文件长下面这个样子
 
-```bash
+```shell
 [api]
 token = <your-api-token-here>
 ```
 
 你也可以在这个文件中设置几个选项，这是一个所有可用的选项：
 
-```bash
+```shell
 [api]
 token = <your-api-token-here>
 url = https://asciinema.example.com
@@ -167,7 +167,7 @@ maxwait = 1
 
 ## 其他参数
 
-```bash
+```shell
 :cloud:  ~  asciinema -h
 usage: asciinema [-h] [--version] {rec,play,upload,auth} ...
 
@@ -182,7 +182,7 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  --version             show program's version number and exit
+  --version             show program,s version number and exit
 
 example usage:
   Record terminal and upload it to asciinema.org:
