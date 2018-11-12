@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在 Google Cloud 安装 gogs
+title: 在 Google Cloud 上安装 Gogs
 ---
 
 为啥选 Google Cloud 呢？主要原因是他们家有香港和台湾的服务器，速度和价格来讲都比较好，但是他们的 Web 面板操作真心复杂。下面来看看如何操作吧！
@@ -29,6 +29,8 @@ title: 在 Google Cloud 安装 gogs
 cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAvTjxXeOkDBmYl9BCcdKqYA1Cw6EjxKr58MVJNIIjzPGc0dCpt2CDe9qLzw+v+/KOhDd+6t0mwVeVyDLJjgCgxw== hello@example.com
 ```
+
+> 如果你还没听过 SSH 公钥登陆，可以看看 [这篇](https://blog.biezhi.me/2017/08/ssh-no-password-login.html) 文章。
 
 这时候就可以在本地登陆了，用户名不是 ROOT，而是你刚才添加 SSH 公钥后左边的这个用户名
 
@@ -171,7 +173,7 @@ server {
 service nginx reload
 ```
 
-现在我们使用 `git` 用户将 gogs 启动起来，然后访问你的域名就可以安装了！
+现在我们使用 `git` 用户将 Gogs 启动起来，然后访问你的域名就可以安装了！
 
 ## 配置 Gogs
 
