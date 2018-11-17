@@ -90,10 +90,10 @@ sudo rm /etc/nginx/sites-enabled/default
 
 **创建反向代理配置**
 
-默认可能没安装 `vim`，可以安装 `apt-get install -y vim`，然后创建自己的配置文件：
+默认可能没安装 `vim`，可以安装 `sudo apt-get install -y vim`，然后创建自己的配置文件：
 
 ```shell
-vim /etc/nginx/sites-available/rocketchat.conf
+sudo vim /etc/nginx/sites-available/rocketchat.conf
 ```
 
 内容如下：
