@@ -166,6 +166,8 @@ sudo certbot renew --dry-run
 
 ![Rocket.Chat 登录]({{ "/public/images/2018/11/rocketchat02.png" | prepend: site.cdnurl }} "Rocket.Chat 登录")
 
+好了，到这里已经安装完毕了，Rocket.Chat 的更多有趣的玩法需要你自己体验，起飞吧少年！
+
 # 参考
 
 - [Rocket.Chat in Ubuntu](https://rocket.chat/docs/installation/manual-installation/ubuntu/){:target="_blank"}
