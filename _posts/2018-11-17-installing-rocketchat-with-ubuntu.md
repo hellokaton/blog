@@ -38,15 +38,15 @@ title: 在 Ubuntu 上安装 Rocket.Chat
 sudo apt update && sudo apt upgrade
 ```
 
-安装 Rocket.Chat 的最快方法是使用它的 Snap。Snaps 是在所有主要 Linux 系统上运行的容器化软件包。Snapd 是运行和管理快照的服务。Snapd 默认安装在 Ubuntu 16.04 LTS 上。
+安装 `Rocket.Chat` 最快的方法是使用它的 `Snap`。`Snap` 是 `Linux` 系统上一种软件包管理的方式。它类似一个容器拥有一个应用程序所有的文件和库，各个应用程序之间完全独立。所以使用snap包的好处就是它解决了应用程序之间的依赖问题，使应用程序之间更容易管理。在 `Ubuntu 16.04 LTS` 以上版本的系统都内置了。
 
-1. 安装Rocket.Chat
+1. 安装 Rocket.Chat
 
 ```shell
 sudo snap install rocketchat-server
 ```
 
-2. 安装后，Rocket.Chat服务自动启动。要检查Rocket.Chat是否正在运行：
+2. 安装后，Rocket.Chat 服务会自动启动，检查一下是否在运行：
 
 ```shell
 sudo service snap.rocketchat-server.rocketchat-server status
@@ -132,7 +132,7 @@ sudo nginx -s reload
 
 ## 配置 SSL 证书
 
-申请证书的方式很多，这里我们使用的是免费的 [Let's Encrypt](https://letsencrypt.org/) 的 SSL 证书。有人写了一个名为 [Certbot](https://certbot.eff.org/) 的工具让我们可以轻松的获得证书。
+申请证书的方式很多，这里我们使用的是免费的 [Let's Encrypt](https://letsencrypt.org/){:target="_blank"} 的 SSL 证书。有人写了一个名为 [Certbot](https://certbot.eff.org/){:target="_blank"} 的工具让我们可以轻松的获得证书。
 
 **安装 Certbot**
 
@@ -168,5 +168,5 @@ sudo certbot renew --dry-run
 
 # 参考
 
-- [Rocket.Chat in Ubuntu](https://rocket.chat/docs/installation/manual-installation/ubuntu/)
-- [Nginx on Ubuntu](https://certbot.eff.org/lets-encrypt/ubuntuxenial-nginx.html)
+- [Rocket.Chat in Ubuntu](https://rocket.chat/docs/installation/manual-installation/ubuntu/){:target="_blank"}
+- [Nginx on Ubuntu](https://certbot.eff.org/lets-encrypt/ubuntuxenial-nginx.html){:target="_blank"}
