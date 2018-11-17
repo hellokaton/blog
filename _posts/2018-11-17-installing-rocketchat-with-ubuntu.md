@@ -5,6 +5,8 @@ title: 在 Ubuntu 上安装 Rocket.Chat
 
 [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat){:target="_blank"} 是一种类似 Slack 的开源聊天软件，当然你可能没用过 Slack，毕竟它在国内不流行，这名字听起来像是 “火箭聊天”，非常霸气啊！不过光开源这一项就很吸引我了，同道中人同道中人。
 
+> 观看 [视频版](https://www.youtube.com/watch?v=iaAot5K2sps){:target="_blank"} 教程。
+
 # Rocket.Chat 特性
 
 - 群组聊天
