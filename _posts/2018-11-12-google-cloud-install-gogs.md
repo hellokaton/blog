@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 在 Google Cloud 上安装 Gogs 
+tags: ["git", "vps"]
 ---
 
 为啥选 Google Cloud 呢？主要原因是他们家有香港和台湾的服务器，速度和价格来讲都比较好，但是他们的 Web 面板操作真心复杂。下面来看看如何操作吧！

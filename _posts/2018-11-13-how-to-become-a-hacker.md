@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 牢记：如何成为黑客
+tags: ["黑客"]
 ---
 
 How To Become A Hacker
