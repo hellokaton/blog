@@ -309,7 +309,8 @@ gem install colorls
 如何修复呢？只需要下载 [Menlo-for-Powerline](https://github.com/abertsch/Menlo-for-Powerline) 里的 ttf 字体文件，然后双击安装。安装成功后在 vscode 中配置一项：
 
 ```vscode
-"terminal.integrated.fontFamily": "Menlo for Powerline",
+"terminal.integrated.fontFamily": "Hack Nerd Font",
+"terminal.integrated.fontSize": 14,
 ```
 
 这样就会变成下面这个样子了。
