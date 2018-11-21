@@ -306,7 +306,7 @@ gem install colorls
 
 <img src='{{ "/public/images/2018/11/vscode_font.png" | prepend: site.cdnurl }}'  alt="vscode 字体错误" width="450px"/>
 
-如何修复呢？只需要下载 [Menlo-for-Powerline](https://github.com/abertsch/Menlo-for-Powerline) 里的 ttf 字体文件，然后双击安装。安装成功后在 vscode 中配置一项：
+如何修复呢？只需要在 vscode 的配置文件中加入下面的配置：
 
 ```vscode
 "terminal.integrated.fontFamily": "Hack Nerd Font",
