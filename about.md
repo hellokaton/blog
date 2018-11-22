@@ -13,11 +13,30 @@ order: 5
 `biezhi` 是我一直在使用的英文 ID，因为之前购买了 `biezhi.me` 的域名就一直在使用。
 博客只有在想起来 && 有时间的时候可能会写一篇。
 
-目前还没什么其他可说的，如果想看我的代码可以去我的 [Github](https://github.com/biezhi){:target="_blank"}，想看我的视频教程可以去 [Youtube](https://www.youtube.com/channel/UCmlhPmTdqYhRWwWZWSIBwGw) 频道。
+目前还没什么其他可说的，如果想看我的代码可以去我的 [Github](https://github.com/biezhi){:target="_blank"}，想看我的视频教程可以去 [Youtube](https://www.youtube.com/channel/UCmlhPmTdqYhRWwWZWSIBwGw){:target="_blank"} 频道。
 
 ## 编程理念
 
 仰慕「优雅编码的艺术」，追崇实践 + 理论得真知。
+
+## 做过什么
+
+- 2018：发布 [examples](https://examples.codesofun.com/){:target="_blank"} 常用代码分享博客
+- 2018：创建 20DaysOfCode 开发者训练计划
+- 2018：创建 「代码真香」Youtube 频道
+- 2018：开源 [profit](https://github.com/biezhi/profit){:target="_blank"} 在线打赏系统
+- 2018：开源 [gitmoji](https://github.com/biezhi/gitmoji-plugin){:target="_blank"} Git 提交表情插件
+- 2018：开源 [excel-plus](https://github.com/biezhi/excel-plus){:target="_blank"} Excel 操作库
+- 2018：开源 [eve](https://github.com/biezhi/eve){:target="_blank"} 一个简单的命令行新闻客户端
+- 2018：开源 [anima](https://github.com/biezhi/anima){:target="_blank"} 数据库操作库
+- 2018：发布 [elves](https://github.com/biezhi/elves){:target="_blank"} 爬虫框架的设计和实现
+- 2018：发布 [learn-java8](https://github.com/biezhi/learn-java8){:target="_blank"} Java 8 视频课程
+- 2017：发布 [bye-2017](https://github.com/biezhi/bye-2017){:target="_blank"} 年终总结统计
+- 2017：开源 [geekbb](https://github.com/biezhi/geek-dev){:target="_blank"} 程序员论坛
+- 2017：开源 [mrpc](https://github.com/otale/tale){:target="_blank"} 分布式服务治理框架
+- 2017：开源 [tale](https://github.com/otale/tale){:target="_blank"} 博客系统
+- 2016：开源 [wechat-api](https://github.com/biezhi/wechat-api){:target="_blank"} 微信机器人 SDK
+- 2015：开源 [Blade](https://github.com/lets-blade/blade){:target="_blank"} 框架
 
 ## 版权说明
 
