@@ -32,7 +32,7 @@ order: 5
 - 2018：发布 [elves](https://github.com/biezhi/elves){:target="_blank"}：爬虫框架的设计和实现
 - 2018：发布 [learn-java8](https://github.com/biezhi/learn-java8){:target="_blank"} Java 8 视频课程
 - 2017：发布 [bye-2017](https://github.com/biezhi/bye-2017){:target="_blank"}：年终总结统计
-- 2017：开源 [geekbb](https://github.com/biezhi/geek-dev){:target="_blank"}：极简程序员论坛
+- 2017：开源 [geekbb](https://github.com/biezhi/geekbb){:target="_blank"}：极简程序员论坛
 - 2017：开源 [mrpc](https://github.com/kongzhongfinance/mrpc){:target="_blank"}：分布式服务治理框架
 - 2017：开源 [tale](https://github.com/otale/tale){:target="_blank"}：美观方便的博客系统
 - 2016：开源 [wechat-api](https://github.com/biezhi/wechat-api){:target="_blank"}：微信机器人 SDK
