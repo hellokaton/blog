@@ -1,76 +1,97 @@
+/*
+Docco style used in http://jashkenas.github.com/docco/ converted by Simon Madine (@thingsinjars)
+*/
+
 .hljs {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    color: #abb2bf;
-    background: #282c34
+    color: #000;
+    background: #e6e6e6;
 }
 
 .hljs-comment,
 .hljs-quote {
-    color: #5c6370;
-    font-style: italic
+    color: #408080;
+    font-style: italic;
 }
 
-.hljs-doctag,
 .hljs-keyword,
-.hljs-formula {
-    color: #c678dd
-}
-
-.hljs-section,
-.hljs-name,
 .hljs-selector-tag,
-.hljs-deletion,
+.hljs-literal,
 .hljs-subst {
-    color: #e06c75
+    color: #954121;
 }
 
-.hljs-literal {
-    color: #56b6c2
+.hljs-number {
+    color: #40a070;
 }
 
 .hljs-string,
-.hljs-regexp,
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta-string {
-    color: #98c379
+.hljs-doctag {
+    color: #219161;
 }
 
-.hljs-built_in,
-.hljs-class .hljs-title {
-    color: #e6c07b
-}
-
-.hljs-attr,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-type,
+.hljs-selector-id,
 .hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-number {
-    color: #d19a66
+.hljs-section,
+.hljs-type {
+    color: #19469d;
+}
+
+.hljs-params {
+    color: #00f;
+}
+
+.hljs-title {
+    color: #458;
+    font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+    color: #000080;
+    font-weight: normal;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+    color: #008080;
+}
+
+.hljs-regexp,
+.hljs-link {
+    color: #b68;
 }
 
 .hljs-symbol,
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-title {
-    color: #61aeee
+.hljs-bullet {
+    color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+    color: #0086b3;
+}
+
+.hljs-meta {
+    color: #999;
+    font-weight: bold;
+}
+
+.hljs-deletion {
+    background: #fdd;
+}
+
+.hljs-addition {
+    background: #dfd;
 }
 
 .hljs-emphasis {
-    font-style: italic
+    font-style: italic;
 }
 
 .hljs-strong {
-    font-weight: bold
-}
-
-.hljs-link {
-    text-decoration: underline
+    font-weight: bold;
 }

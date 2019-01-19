@@ -1,5 +1,12 @@
 <script src="{{ '/public/js/instantclick.min.js' | prepend: site.cdnurl }}" data-no-instant></script>
 <script type="text/javascript">
+	$(document).ready(function () {
+		$("p img").each(function () {
+			var wrapA = "<a data-fancybox='gallery' href='" + this.src + "'></a>";
+			$(this).wrapAll(wrapA);
+		});
+	});
+
 	var isLoad = false;
 	InstantClick.on('change', function (isInitialLoad) {
 		var blocks = document.querySelectorAll('pre code');

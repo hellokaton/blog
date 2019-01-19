@@ -38,7 +38,7 @@ body {
 }
 
 body {
-  font-family: helvetica neue, Helvetica, STHeitiSC-Light, Arial, sans-serif;
+  font-family: 'Forum', -apple-system, Helvetica, Arial, "PingFang SC", "Source Han Sans SC", "Microsoft YaHei", "WenQuanYi MicroHei", sans-serif;
   background-color: #fff;
   color: #161c1f;
   -webkit-text-size-adjust: 100%;
@@ -215,7 +215,7 @@ kbd {
 code {
   padding: .18em 0.28em;
   /* Could be mistaken for a link if the user choses a similar link-color, so better no colored inline code. */
-  font-size: .9rem;
+  font-size: .85rem;
   background-color: #e8e8e8;
   color: #000000;
 }
@@ -224,9 +224,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: .5rem;
   line-height: 1.2;
-  background-color: #282c34;
   /* Prevent code linebreaks and allow side-scrolling (much better readability on mobile) */
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -242,7 +240,6 @@ pre code {
 .highlight {
   margin-bottom: 1rem;
   /* Disableling the border radius prevents repainting when scrolling on mobile */
-  border-radius: 4px;
 }
 
 .highlight pre {
@@ -251,11 +248,10 @@ pre code {
 
 /* Quotes */
 blockquote {
-  border-left: 5px solid #ff9b51;
-  background-color: #efeeee;
+  border-left: 5px solid #a0a0a0;
+  background-color: #f9f9f9;
   padding: .5rem 1rem;
   margin: 0 0 1.8rem;
-  font-style: italic;
   color: #2a2e2e;
 }
 

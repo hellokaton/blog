@@ -248,15 +248,6 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   line-height: 1.7;
-
-  /*
-   * Ensure same content width when JS drawer is disabled.
-   * Failing to do this caused text reflowing, when the JS kicked in (adding the .drawer styles)
-   * and moved the drawer from the bottom to the side.
-   * Now the drawer is placed above the 0.3rem border on the side.
-   * It also looks kinda cool w/o the drawer.
-   */
-  // border-left: 0.3rem solid #fff;
 }
 
 
