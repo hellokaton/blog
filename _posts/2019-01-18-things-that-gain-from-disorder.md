@@ -128,7 +128,7 @@ tags: ["读书"]
 
 在家庭、个人层面，不少家长对孩子的学习、生活干涉太多，阻碍了孩子反脆弱能力的培养。在国家、社会层面，如格林斯潘这样的脆弱推手，横加干涉经济运行，给经济套上了太多枷锁，阻碍了经济体系的自我革新。
 
-![]({{ "/public/images/2019/01/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" | prepend: site.cdnurl }} "")
+![zw]({{ "/public/images/2019/01/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" | prepend: site.cdnurl }} "zw")
 
 这种过度干预带来的严重后果就是 “医源性损伤”，历史上的医学就曾经犯过这样的错，对病人的病情不加以分辨、盲目施以重手，导致严重的后果。美国国父华盛顿就是被这样的“放血疗法”夺走了生命。
 
