@@ -128,7 +128,7 @@ tags: ["读书"]
 
 在家庭、个人层面，不少家长对孩子的学习、生活干涉太多，阻碍了孩子反脆弱能力的培养。在国家、社会层面，如格林斯潘这样的脆弱推手，横加干涉经济运行，给经济套上了太多枷锁，阻碍了经济体系的自我革新。
 
-![zw]({{ "/public/images/2019/01/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" | prepend: site.cdnurl }} "zw")
+![zw]({{ "/public/images/2019/01/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" | prepend: site.cdnurl }} "zw"){:width="50%"}
 
 这种过度干预带来的严重后果就是 “医源性损伤”，历史上的医学就曾经犯过这样的错，对病人的病情不加以分辨、盲目施以重手，导致严重的后果。美国国父华盛顿就是被这样的“放血疗法”夺走了生命。
 
@@ -138,7 +138,7 @@ tags: ["读书"]
 
 提升反脆弱的能力，一个非常有效的方法是采用杠铃策略。要学会做多手准备，合理分配自己的时间、精力、资源，在杠铃的两头都有储备，避免满盘皆输的局面。
 
-![泰勒斯]({{ "/public/images/2019/01/Illustrerad_Verldshistoria_band.jpg" | prepend: site.cdnurl }} "泰勒斯")
+![泰勒斯]({{ "/public/images/2019/01/Illustrerad_Verldshistoria_band.jpg" | prepend: site.cdnurl }} "泰勒斯"){:width="50%"}
 
 杠铃策略的秘诀不是对未来的预测，其实未来是难以预测的。古希腊哲学家泰勒斯投资榨油机的故事，往往被解读为他可以准确地预测未来，其实泰勒斯的秘诀正是杠铃策略，他准备好了橄榄丰收与不丰收的两种可能，分别作了准备。
 
