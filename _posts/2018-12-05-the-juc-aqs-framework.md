@@ -1,7 +1,7 @@
 ---
 layout: post
-title: J.U.C 同步框架（AQS 框架）翻译
-tags: ["java", "juc"]
+title: J.U.C 同步框架（AQS 框架）
+tags: ["java", "juc", "翻译"]
 ---
 
 本文转载自：[https://www.cnblogs.com/dennyzhangdd/p/7218510.html](https://www.cnblogs.com/dennyzhangdd/p/7218510.html)
