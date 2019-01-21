@@ -88,3 +88,5 @@ sendfile(socket, file, len);
 ```
 
 ![sendfile代替读写]({{ "/public/images/2019/01/sys_call_sendfile.jpg" | prepend: site.cdnurl }} "sendfile 代替读写")
+
+> 英文原文：http://www.linuxjournal.com/article/6345
