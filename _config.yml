@@ -27,7 +27,7 @@ author:
 # 社交信息
 socials:
   - title: Github
-    icon: github
+    icon: github-logo
     url: https://github.com/biezhi
   - title: Twitter
     icon: twitter
@@ -35,9 +35,9 @@ socials:
   - title: Youtube
     icon: youtube
     url: https://www.youtube.com/channel/UCmlhPmTdqYhRWwWZWSIBwGw
-  - title: Telegram Group
-    icon: telegram
-    url: https://telegram.me/github_cn
+  - title: 知乎主页
+    icon: zhihu
+    url: https://www.zhihu.com/people/biezhi
 
 # 友链
 links:

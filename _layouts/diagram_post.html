@@ -1,0 +1,132 @@
+---
+layout: default
+---
+
+<script src="//cdn.bootcss.com/raphael/2.2.8/raphael.min.js"></script>
+<script src="//cdn.bootcss.com/flowchart/1.12.0/flowchart.min.js"></script>
+
+<article class="post">
+  <h1 class="post-title">{{page.title}}</h1>
+  <div class="post-date">
+    <span><span class="icon icon-calendar"></span> 发表于 <time datetime="{{page.date | date_to_xmlschema}}">{{page.date |
+        date: '%Y年%m月%d日'}}</time> &middot;</span>
+    {% if page.categories.size != 0 %}
+    归类于 {% for cat in page.categories %}
+    <a href="{{ site.baseurl }}/categories.html#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+    &middot;
+    {% endfor %}
+    {% endif %}
+    阅读量 <span id="busuanzi_value_page_pv">加载中...</span>
+  </div>
+  <hr class="post-divide">
+  {{content}}
+</article>
+
+{% if page.tags.size != 0 %}
+<span class="tags">
+  <span class="icon icon-price-tags" style="color: #8c8b8b;font-size: .9rem;">&nbsp;</span>
+  {% for tag in page.tags %}
+  <a href="{{ site.baseurl }}/tags.html#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>&nbsp;
+  {% endfor %}
+</span>
+{% endif %}
+
+<div style="margin-top: 1rem;padding-left: 0;">
+  <hr class="post-divide" />
+</div>
+<div class="post-pagination">
+  {% if page.previous %}
+  <a class="float-left" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">« {{
+    page.previous.title }}</a>
+  {% endif %}
+
+  {% if page.next %}
+  <a class="float-right" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}
+    »</a>
+  {% endif %}
+</div>
+<div class="clearfix"></div>
+
+<script>
+  function flow(name, f) {
+    var chart = flowchart.parse(f);
+    chart.drawSVG(name, {
+      'x': 30,
+      'y': 50,
+      'line-width': 3,
+      'maxWidth': 3, //ensures the flowcharts fits within a certian width
+      'line-length': 50,
+      'text-margin': 10,
+      'font-size': 14,
+      'font': 'normal',
+      'font-family': 'Helvetica',
+      'font-weight': 'normal',
+      'font-color': 'black',
+      'line-color': 'black',
+      'element-color': 'black',
+      'fill': 'white',
+      'yes-text': 'yes',
+      'no-text': 'no',
+      'arrow-end': 'block',
+      'scale': 1,
+      'symbols': {
+        'start': {
+          'font-color': 'red',
+          'element-color': 'green',
+          'fill': 'yellow'
+        },
+        'end': {
+          'class': 'end-element'
+        }
+      },
+      'flowstate': {
+        'past': {
+          'fill': '#CCCCCC',
+          'font-size': 12
+        },
+        'current': {
+          'fill': 'yellow',
+          'font-color': 'red',
+          'font-weight': 'bold'
+        },
+        'future': {
+          'fill': '#FFFF99'
+        },
+        'request': {
+          'fill': 'blue'
+        },
+        'invalid': {
+          'fill': '#444444'
+        },
+        'approved': {
+          'fill': '#58C4A3',
+          'font-size': 12,
+          'yes-text': 'APPROVED',
+          'no-text': 'n/a'
+        },
+        'rejected': {
+          'fill': '#C45879',
+          'font-size': 12,
+          'yes-text': 'n/a',
+          'no-text': 'REJECTED'
+        }
+      }
+    });
+  }
+
+  window.onload = function () {
+    var cd = document.getElementsByClassName("flow");
+    for (var i = 0; i < cd.length; i++) {
+      var t = cd[i].getElementsByClassName("flowcode")[0].value;
+      var canvas = "canvas" + i;
+      cd[i].innerHTML = "<div id=\"" + canvas + "\"></div>"
+      flow(canvas, t);
+    }
+
+  }
+</script>
+
+<!-- Add Disqus Comments -->
+{% if site.disqus %}
+{% include disqus.html %}
+{% endif %}

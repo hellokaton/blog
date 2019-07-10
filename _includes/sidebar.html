@@ -41,7 +41,8 @@
       {% for node in pages_list %}
       {% if node.title != null %}
       {% if node.layout == "page" %}
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{node.url | prepend:site.baseurl}}">{{node.title}}</a>
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
+        href="{{node.url | prepend:site.baseurl}}">{{node.title}}</a>
       {% endif %}
       {% endif %}
       {% endfor %}
@@ -49,9 +50,10 @@
 
     <div class="sidebar-social">
       {% for item in site.socials %}
-      <a href="{{ item.url }}" title="{{item.title}}" target="_blank" data-no-instant><span class="icon icon-{{item.icon}}"></span></a>
+      <a href="{{ item.url }}" title="{{item.title}}" target="_blank" data-no-instant><span
+          class="icon czs-{{item.icon}}"></span></a>
       {% endfor %}
-      <a href="{{site.baseurl}}/feed.xml"><span class="icon icon-rss"></span></a>
+      <a href="{{site.baseurl}}/feed.xml"><span class="icon czs-rss"></span></a>
     </div>
   </div>
 </aside>
