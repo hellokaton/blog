@@ -63,6 +63,8 @@ links:
     url: https://bakumon.me/blog/
   - title: 练涛
     url: https://blog.liantao.me/
+  - title: Printf520
+    url: https://printf520.com/
 
 # html 压缩
 compress_html:
