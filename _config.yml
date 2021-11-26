@@ -1,9 +1,9 @@
-title: 编程和酒
-url: https://blog.biezhi.me
+title: HelloKaton
+url: https://blog.hellokaton.com
 baseurl: ''
 cdnurl: 'https://blog-biezhi-me-1251171175.cos.ap-shanghai.myqcloud.com'
 description: >
-  关于编程、人生、认知和我的思想。
+  关于编程的一些想法。
 
 permalink: /:year/:month/:title.html
 
@@ -20,24 +20,24 @@ paginate_path: "/page/:num"
 
 # 作者信息
 author:
-  name: biezhi
-  email: biezhi.me@gmail.com
+  name: katon
+  email: hellokaton@gmail.com
   photo: /public/images/avatar.jpeg
 
 # 社交信息
 socials:
   - title: Github
     icon: github-logo
-    url: https://github.com/biezhi
+    url: https://github.com/hellokaton
   - title: Twitter
     icon: twitter
-    url: https://twitter.com/biezhii
+    url: https://twitter.com/hellokaton
   - title: Youtube
     icon: youtube
     url: https://www.youtube.com/channel/UCmlhPmTdqYhRWwWZWSIBwGw
   - title: 知乎主页
     icon: zhihu
-    url: https://www.zhihu.com/people/biezhi
+    url: https://www.zhihu.com/people/hellokaton
 
 # 友链
 links:
