@@ -1,6 +1,6 @@
 {
-    "short_name": "魔王不造反",
-    "name": "王爵的技术博客",
+    "short_name": "HelloKaton",
+    "name": "HelloKaton",
     "icons": [{
             "src": "/public/images/icons/launcher-icon-128x128.png",
             "type": "image/png",
