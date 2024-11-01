@@ -1,16 +1,16 @@
 title: HelloKaton
 url: https://blog.hellokaton.com
-baseurl: ''
-cdnurl: 'https://blog-biezhi-me-1251171175.cos.ap-shanghai.myqcloud.com'
+baseurl: ""
+cdnurl: "https://blog-biezhi-me-1251171175.cos.ap-shanghai.myqcloud.com"
 description: >
   关于编程的一些想法。
 
 permalink: /:year/:month/:title.html
 
 image: /public/images/mountains.jpg
-color: '#dc322f'
-google_analytics: 
-baidu_analytics: 2209f3e596f3e0c61a293f49a2f65ba3
+color: "#dc322f"
+google_analytics:
+umami_analytics: bc691a71-e1e2-49bc-bb28-cc7f38a7d47f
 disqus: blog-biezhi-me
 
 markdown: kramdown

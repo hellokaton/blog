@@ -5,6 +5,6 @@
 @charset "utf-8";
 // Imports sass/scss files
 
-@import "poole";
-@import "hyde";
-@import "highlight";
+@use "poole";
+@use "hyde";
+@use "highlight";
